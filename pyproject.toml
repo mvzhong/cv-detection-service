@@ -1,0 +1,23 @@
+[project]
+name = "cv-detection-service"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Michael Zhong", email = "mvzhong@gmail.com"},
+]
+dependencies = [
+    "opencv-python>=4.9.0.80",
+    "opencv-contrib-python>=4.9.0.80",
+    "python-vlc>=3.0.20123",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.1",
+    "pydantic>=2.7.3",
+    "python-multipart>=0.0.9",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
