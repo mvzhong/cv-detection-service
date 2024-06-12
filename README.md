@@ -5,6 +5,8 @@ Includes a simple RESTful API built with FastAPI that takes an image and returns
 
 I'm running this on a local server and sending images from an ESP32-CAM module for classification. I'm planning to use the labels to trigger a spray can whenever my cats get on the counter :)
 
+![sample output](https://github.com/mvzhong/cv-detection-service/blob/main/readme-files/sample-output.png?raw=true)
+
 ## Setup
 This is a Python3 project with [PDM](https://pdm-project.org/en/latest/) as the package manager. You'll need to install PDM to get all the dependencies installed.
 
