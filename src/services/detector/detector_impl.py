@@ -46,7 +46,7 @@ class Detector:
             low=0, high=255, size=(len(self.classes_list), 3)
         )
 
-        print(self.classes_list)
+        # print(self.classes_list)
 
     def detect_objects_base64(self, img_base64: str) -> list[DetectedObject]:
         try:
@@ -146,13 +146,7 @@ class Detector:
             class_label, class_confidence, area_ratio
         )
         cv2.putText(
-            image,
-            display_text,
-            (x, y - 10),
-            cv2.FONT_HERSHEY_PLAIN,
-            5,
-            class_color,
-            2,
+            image, display_text, (x, y - 10), cv2.FONT_HERSHEY_PLAIN, 1, class_color, 1
         )
 
         line_width = int(min((0.3 * w), (0.3 * h)))
