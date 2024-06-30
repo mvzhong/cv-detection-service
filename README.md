@@ -7,7 +7,11 @@ I'm running this on a local server and sending images from an ESP32-CAM module f
 
 Client code for ESP32-CAM streaming image to this CV service: https://github.com/mvzhong/esp32-cv-stream
 
-![sample output](https://github.com/mvzhong/cv-detection-service/blob/main/readme-files/sample-output.png?raw=true)
+Example output labeled by the server (using random image found online):
+![sample good output](https://github.com/mvzhong/cv-detection-service/blob/main/readme-files/sample-output.png?raw=true)
+
+Unfortunately, the labeling is not always the best, and will likely require me to train the models myself on more cat data, or on my cats specifically:
+![sample bad output](https://github.com/mvzhong/cv-detection-service/blob/main/readme-files/skateboard.png?raw=true) 
 
 ## Setup
 This is a Python3 project with [PDM](https://pdm-project.org/en/latest/) as the package manager. You'll need to install PDM to get all the dependencies installed.
